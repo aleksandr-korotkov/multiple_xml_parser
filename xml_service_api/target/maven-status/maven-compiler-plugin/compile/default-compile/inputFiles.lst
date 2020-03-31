@@ -1,0 +1,11 @@
+C:\wprc\epam\xml\xml_project\xml_service_api\src\main\java\entities\Count.java
+C:\wprc\epam\xml\xml_project\xml_service_api\src\main\java\entities\Category.java
+C:\wprc\epam\xml\xml_project\xml_service_api\src\main\java\enums\Color.java
+C:\wprc\epam\xml\xml_project\xml_service_api\src\main\java\entities\Product.java
+C:\wprc\epam\xml\xml_project\xml_service_api\src\main\java\adapters\JsonLocalDateDeserializer.java
+C:\wprc\epam\xml\xml_project\xml_service_api\src\main\java\adapters\JsonLocalDateSerializer.java
+C:\wprc\epam\xml\xml_project\xml_service_api\src\main\java\adapters\XmlLocalDateAdapter.java
+C:\wprc\epam\xml\xml_project\xml_service_api\src\main\java\services\XmlService.java
+C:\wprc\epam\xml\xml_project\xml_service_api\src\main\java\entities\RootElement.java
+C:\wprc\epam\xml\xml_project\xml_service_api\src\main\java\entities\SubCategory.java
+C:\wprc\epam\xml\xml_project\xml_service_api\src\main\java\services\JsonService.java
