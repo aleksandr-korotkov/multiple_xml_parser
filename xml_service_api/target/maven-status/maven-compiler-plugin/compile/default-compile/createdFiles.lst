@@ -1,0 +1,11 @@
+entities\SubCategory.class
+entities\Category.class
+adapters\XmlLocalDateAdapter.class
+adapters\JsonLocalDateDeserializer.class
+services\JsonService.class
+services\XmlService.class
+enums\Color.class
+adapters\JsonLocalDateSerializer.class
+entities\Product.class
+entities\Count.class
+entities\RootElement.class

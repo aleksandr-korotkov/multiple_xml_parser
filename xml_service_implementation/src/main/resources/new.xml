@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rootElement>
+    <category name="метизы">
+        <subcategory name="гвозди">
+            <product>
+                <manufacturer>365days</manufacturer>
+                <model>Ab123</model>
+                <dateofmanufacture>2019-01-31</dateofmanufacture>
+                <color>GREEN</color>
+                <price>6.1</price>
+                <count availability="24"/>
+            </product>
+            <product>
+                <manufacturer>barracuda</manufacturer>
+                <model>cz153</model>
+                <dateofmanufacture>2019-01-31</dateofmanufacture>
+                <color>YELLOW</color>
+                <price>5.1</price>
+                <count availability="0"/>
+            </product>
+        </subcategory>
+        <subcategory name="саморезы">
+            <product>
+                <manufacturer>mitsubishi motors</manufacturer>
+                <model>se333</model>
+                <dateofmanufacture>2019-02-28</dateofmanufacture>
+                <color>RED</color>
+                <price>99.99</price>
+                <count availability="9000"/>
+            </product>
+        </subcategory>
+    </category>
+    <category name="электроинструмент">
+        <subcategory name="перфораторы">
+            <product>
+                <manufacturer>bosch</manufacturer>
+                <model>xx999</model>
+                <dateofmanufacture>2019-11-22</dateofmanufacture>
+                <color>BLACK</color>
+                <price>999.1</price>
+                <count availability="1"/>
+            </product>
+        </subcategory>
+    </category>
+</rootElement>

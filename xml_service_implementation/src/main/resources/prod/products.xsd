@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="products">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="category" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="subcategory" maxOccurs="unbounded">
+                                <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="product" maxOccurs="unbounded">
+                                                <xs:complexType>
+                                                    <xs:sequence>
+                                                        <xs:element name="manufacturer"/>
+                                                        <xs:element name="model">
+                                                            <xs:simpleType>
+                                                                <xs:restriction base="xs:string">
+                                                                    <xs:pattern value="[a-zA-Zа-яА-Я]{2}\d{3}"/>
+                                                                </xs:restriction>
+                                                            </xs:simpleType>
+                                                        </xs:element>
+                                                        <xs:element name="dateofmanufacture">
+                                                            <xs:simpleType>
+                                                                <xs:restriction base="xs:string">
+                                                                    <xs:pattern value="\d{2}[-]\d{2}[-]\d{4}"/>
+                                                                    <xs:length value="10"/>
+                                                                </xs:restriction>
+                                                            </xs:simpleType>
+                                                        </xs:element>
+                                                        <xs:element name="color">
+                                                            <xs:simpleType>
+                                                                <xs:restriction base="xs:string">
+                                                                    <xs:enumeration value="RED"/>
+                                                                    <xs:enumeration value="BLACK"/>
+                                                                    <xs:enumeration value="BLUE"/>
+                                                                    <xs:enumeration value="GREEN"/>
+                                                                    <xs:enumeration value="YELLOW"/>
+                                                                    <xs:enumeration value="PURPLE"/>
+                                                                </xs:restriction>
+                                                            </xs:simpleType>
+                                                        </xs:element>
+                                                        <xs:element name="price">
+                                                            <xs:simpleType>
+                                                                <xs:restriction base="xs:decimal">
+                                                                    <xs:fractionDigits value="2"/>
+                                                                    <xs:minExclusive value="0"/>
+                                                                </xs:restriction>
+                                                            </xs:simpleType>
+                                                        </xs:element>
+                                                        <xs:element name="count">
+                                                           <xs:complexType>
+                                                               <xs:attribute name="availability" type="xs:int" use="required"/>
+                                                           </xs:complexType>
+                                                        </xs:element>
+                                                    </xs:sequence>
+                                                </xs:complexType>
+                                            </xs:element>
+                                        </xs:sequence>
+                                    <xs:attribute name="name" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="name" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:unique name="uniqueCategory">
+            <xs:selector xpath="category"></xs:selector>
+            <xs:field xpath="@name"></xs:field>
+        </xs:unique>
+    </xs:element>
+</xs:schema>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
